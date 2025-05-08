@@ -2,36 +2,37 @@
 
 /* remove all default styles added by browsers */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /* general styles  */
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #3a3a3a;
+  font-family: lato, sans-serif;
 }
 
 /* Header */
 header {
-    background-color: red;
+  background-color: red;
 }
 
 /* Main */
 
-main{
-    background-color: blue;
-    /* flex grow - flex shrink and flex basis - makes the main take up any surplus space and wont shrink if there isnt enough space. */
-    flex: 1 0 auto;
+main {
+  background-color: blue;
+  /* flex grow - flex shrink and flex basis - makes the main take up any surplus space and wont shrink if there isnt enough space. */
+  flex: 1 0 auto;
 }
 
 /* Footer */
 
 footer {
-    background-color: yellow;
+  background-color: yellow;
 }
