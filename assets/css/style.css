@@ -18,6 +18,15 @@ body {
   font-family: lato, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
 /* Header */
 header {
   background-color: #ffffff;
@@ -29,13 +38,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-h1 {
-  font-family: oswald, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
 }
 
 header a {
@@ -98,9 +100,24 @@ main {
   background: url(../images/hero-image.webp) no-repeat center center / cover;
   width: 100%;
   height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+}
+
+#cover-text {
+  /* final value is how transparent something is lower = more transparent */
+  background-color: rgba(241, 109, 107, 0.7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+#cover-text > h2,
+#cover-text > h3 {
+  color: #ffffff;
 }
 
 /* Footer */
@@ -151,6 +168,12 @@ main {
   main {
     /* push main content down to accomodate larger header */
     margin-top: 79px;
+  }
+
+  /* hero */
+  #cover-text {
+    width: 300px;
+    right: 50px;
   }
 }
 
